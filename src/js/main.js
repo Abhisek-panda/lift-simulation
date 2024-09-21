@@ -16,6 +16,34 @@ function valueChecker() {
   }
 }
 
+function createFloors() {
+  for (let i = 0; i < parseInt(floors.value); i++) {
+    const floor = document.createElement("div");
+    const upBtn = document.createElement("button");
+    const downBtn = document.createElement("button");
+
+    floor.className = "floor";
+    upBtn.className = "up-btn";
+    downBtn.className = "down-btn";
+
+    upBtn.innerHTML = "UP";
+    downBtn.innerHTML = "DOWN";
+
+    container.appendChild(upBtn);
+    container.appendChild(downBtn);
+    container.appendChild(floor);
+  }
+}
+
+function createLifts() {
+  const liftArr = [];
+  for (let i = 0; i <= parseInt(lifts.value); i++) {
+    const lift = document.createElement("div");
+    lift.className = "lift";
+  }
+}
+
 function generateSimulation() {
   valueChecker();
+  createFloors();
 }

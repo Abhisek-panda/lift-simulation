@@ -1,0 +1,12 @@
+.floor {
+  border-bottom: 2px solid black;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+}
+
+.lift {
+  width: 50%;
+  margin: 5px;
+  background-color: blue;
+}
